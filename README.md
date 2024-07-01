@@ -1,51 +1,4 @@
 # IntroNeuralNetworks in Python: A Template Project
-[![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
-[![GitHub license](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](https://github.com/VivekPa/NeuralNetworkStocks/blob/master/LICENSE.txt) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
-IntroNeuralNetworks is a project that **introduces** neural networks and illustrates an example of how one can use neural networks to predict stock prices. It is built with the goal of allowing beginners to understand the fundamentals of how neural network models are built and go through the entire workflow of machine learning. This model is in no way sophisticated, so do improve upon this base project in any way. 
-
-The core steps involved is: download stock price data from Yahoo Finance, preprocess the dataframes according to specifications for neural network libraries and finally train the neural network model and backtest over historical data. 
-
-This model is not meant to be used to live trade stocks with. However, with further extensions, this model can definitely be used to support your trading strategies. 
-
-I hope you find this project useful in your journey as a trader or a machine learning engineer. Personally, this is my first major machine learning and python project, so I'll appreciate if you **leave a star**. 
-
-*As a disclaimer, this is a purely educational project. Any backtested results do not guarantee performance in live trading. Do live trading at your own risk.*
-*This guide and further analysis has been cross-posted in my blog, [Engineer Quant](https://medium.com/engineer-quant)*
-
-## Contents
-- [Contents](#contents)
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-- [Requirements](#requirements)
-- [Stock Price Data](#stock-price-data)
-- [Preprocessing](#preprocessing)
-  - [Preparing Train Dataset](#preparing-train-dataset)
-  - [Preparing Test Dataset](#preparing-test-dataset)
-- [Neural Network Models](#neural-network-models)
-  - [Multilayer Perceptron Model](#multilayer-perceptron-model)
-  - [LSTM Model](#lstm-model)
-- [Backtesting](#backtesting)
-- [Stock Predictions](#stock-predictions)
-- [Extensions](#extensions)
-  - [Getting Data](#getting-data)
-  - [Neural Network Model](#neuron-network-model)
-  - [Supporting Trade](#supporting-trade)
-- [Contributing](#contributing)
-
-## Overview
-
-The overall workflow for this project is as such:
-1. Acquire the stock price data - this will give us our *features* for the model.
-2. Preprocess the data - make the train and test datasets.
-3. Use the neural network to learn from the training data.
-4. Backtest the model across a date range.
-5. Make useful stock price predictions 
-6. Supplement your trading strategies with the predictions
-
-Although this is very general, it is essentially what you need to build your own machine learning or neural network model.
-
 ## Getting Started
 
 For those of you that do not want to learn about the construction of the model (although I highly suggest you to), clone and download the project, unzip it to your preferred folder and run the following code in your computer.
@@ -143,10 +96,3 @@ As I said earlier, this model can be used to support trading by using this predi
 1. Simple long short strategy: you buy if the prediction is higher, and vice versa
 2. Intraday Trading: if you can get your hands on minute data or even tick data, you can use this predictor to trade.
 3. Statistical Arbitrage: use can also use the predictions of various stock prices to find the correlation between stocks. 
-
-## Contributing
-
-Feel free to fork this and submit PRs. I am open and grateful for any suggestions or bug fixes. Hope you enjoy this project!
-
----
-For more content like this, check out my academic blog at [https://medium.com/engineer-quant](https://medium.com/engineer-quant)
